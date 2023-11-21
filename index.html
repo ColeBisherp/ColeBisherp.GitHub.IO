@@ -3,148 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-around;
-      background-color: #444;
-      overflow: hidden;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      padding: 5px 5px;
-      text-align: center;
-    }
-
-    nav a:hover {
-      background-color: #ddd;
-      color: black;
-    }
-
-    @media screen and (max-width: 600px) {
-      nav a {
-        display: block;
-        width: 100%;
-        text-align: left;
-      }
-    }
-
-    .content {
-      padding: 20px;
-    }
-
-
-    nav img {
-        max-width: 15px;
-    }
-
-
-
-    .hero-banner {
-      height: 400px;
-      background-color: #fff;
-      color: #000;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .hero-banner-black {
-      background-color: #000;
-      color: #fff;
-    }
-
-
-    .hero-banner img{
-        max-width:300px;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        margin:5px auto;
-    }
-
-    @media screen and (max-width: 600px) {
-      .hero-banner {
-        height: 300px;
-      }
-    }
-
-    .hero-banner h1 {
-      margin: 0;
-      font-size: 2em;
-    }
-
-    .content {
-      padding: 20px;
-    }
-
-
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(300px, 1fr));
-      grid-template-rows: repeat(2, 200px);
-      gap: 20px;
-      padding: 20px;
-    }
-
-    .grid-item {
-      background-color: #ddd;
-      padding: 20px;
-      text-align: center;
-    }
-
-    @media screen and (max-width: 600px) {
-      .grid-container {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    .grid-container img{
-        max-width:200px;
-    }
-  </style>
+  <link  href="style.css" rel="stylesheet"  />
+  
 </head>
 <body>
 
   <nav>
-    <a href="#home"><img src="images/logo.png"></a>
-    <a href="#about">Mac</a>
-    <a href="#services">iPhone</a>
-    <a href="#contact">iPad</a>
-    <a href="#contact">TV</a>
-    <a href="#contact">Movies</a>
+    <div class="navtext">
+    <a href="https://www.apple.com/ca/"><img src="images/logo.png"></a>
+    <a href="https://www.apple.com/ca/mac/">Mac</a>
+    <a href="https://www.apple.com/ca/ipad/">iPad</a>
+    <a href="https://www.apple.com/ca/iphone/">iPhone</a>
+    <a href="https://www.apple.com/ca/watch/">Watch</a>
+    <a href="https://www.apple.com/ca/tv-home/">TV</a>
+    <a href="https://www.apple.com/ca/apple-music/">Music</a>
+    <a href="https://support.apple.com/en-ca?cid=gn-ols-home-hp-tab">Support</a>
+  </div>
   </nav>
 
   <div class="hero-banner">
+    <div class="lillogo">
+    <h1><img src="images/12.webp" width="52px" height="57px" /></h1>
+  </div>
     <h1>iPhone 11</h1>
-    <p>Shop Now ></p>
-    <img src="images/6.png" />
+    <p>
+      <a href="https://www.bestbuy.ca/en-ca/product/open-box-apple-iphone-11-64gb-black-unlocked/16450406?cmp=seo-16450406&cmp=knc-s-71700000081849102&gad_source=1&gclid=EAIaIQobChMI2ZiZ6fLIggMVT-bICh38Cwr8EAQYAiABEgLDvPD_BwE&gclsrc=aw.ds"> Shop Now></a> 
+    </p>
+    <img src="images/6.png" width="520px" height="400px" />
+ 
   </div>
 
   <div class="hero-banner hero-banner-black">
     <h1>iPhone 11 Pro</h1>
-    <p>Shop Now ></p>
-    <img src="images/5.png" style="min-width:600px"/>
+    <h2>Pro cameras. Pro display. Pro performance </h2>
+    <h3>From $24.95/mo. or $599 with trade-in.</h3>
+    <p>
+      <a href="https://www.walmart.ca/en/ip/Apple-iPhone-11-Pro-256GB-Space-Gray-Refurbished-Grade-A/PRD1Y0ZQ71O3Q4U?skuId=1Y0ZQ71O3Q4U&offerId=2864486DAC8349CD90BAC28E4EFDA094&cmpid=SEM_CA_33367_RKHMIOQZRL&utm_id=SEM_CA_33367_RKHMIOQZRL&utm_medium=paid_search&utm_source=google&utm_campaign=always_on&gad_source=1&gclid=EAIaIQobChMIkLrAzPLIggMV1EtHAR33pQqZEAYYASABEgLMgfD_BwE&gclsrc=aw.ds"> Learn more > Buy ></a>
+     </p>
+     <div class="Pro">
+    <img src="images/5.png" style="min-width:1000px" />
+  </div>
   </div>
 
 
   <div class="grid-container">
-    <div class="grid-item"><img src="images/1.png" /></div>
-    <div class="grid-item"><img src="images/2.png" /></div>
-    <div class="grid-item"><img src="images/3.png" /></div>
-    <div class="grid-item"><img src="images/4.png" /></div>
+    <div class="grid-item">
+      <h1>Mac</h1>
+      <p>Our most powerfull pro lineup ever. Ready for your best work ever.</p>
+      <a href="https://www.apple.com/ca/mac/">Learn more > Buy ></a>
+      <img src="images/1.png" />
+    </div>
+    <div class="grid-item">
+      <h1>iPad</h1>
+      <p>Like a computer. Unlike any computer.</p>
+      <a href="https://www.apple.com/ca/ipad/">Learn more > Buy ></a>
+      <img src="images/2.png" />
+    </div>
+    <div class="grid-item">
+      <h1>iPhone</h1>
+      <p>Just the right amount of everything</p>
+      <a href="https://www.apple.com/ca/iphone/">Learn more > Buy ></a>
+      <img src="images/3.png" /></div>
+    <div class="grid-item">
+      <h1>Watch</h1>
+      <p>You've never seen a watch like this.</p>
+      <a href="https://www.apple.com/ca/iphone/">Learn more > Buy ></a>
+      <img src="images/4.png" /></div>
   </div>
 
 </body>
